@@ -1,2 +1,2 @@
-MALE: str = 'MALE'
-FEMALE: str = 'FEMALE'
+MALE: str = "MALE"
+FEMALE: str = "FEMALE"

@@ -2,11 +2,15 @@ from typing import Optional, List, Dict, Union
 
 from fastapi import FastAPI
 
-from api.config import Config
+from api.config import DEBUG, VERSION, APP_NAME
 
 
 def get_application() -> FastAPI:
-    application = FastAPI(title="Whisper-API", debug=Config.DEBUG, version=Config.VERSION)
+    application = FastAPI(
+        title=APP_NAME,
+        debug=DEBUG,
+        version=VERSION
+    )
 
     return application
 
